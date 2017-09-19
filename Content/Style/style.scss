@@ -1,0 +1,247 @@
+/* Coolors Exported Palette - coolors.co/fbfbfb-b4bec7-455c73-334354-efc867 */
+
+/* RGB */
+$lightgrey: rgba(251, 251, 251, 1);
+$darkgrey: rgba(180, 190, 199, 1);
+$lightblue: rgba(69, 92, 115, 1);
+$darkblue: rgba(51, 67, 84, 1);
+$yellow: rgba(239, 200, 103, 1);
+$white: rgba(255,255,255,1);
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,700');
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+    position: relative;
+    margin: 0;
+    min-height: 100%;
+    padding-bottom: 0;
+    padding-top: 80px;
+    height: 100%; 
+
+    .stickyfooter{
+        min-height: 100%;
+        margin: 0 auto -80px;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+        font-weight: 400;
+    }
+
+    .navbar {
+        background-color: $darkblue;
+        height: 80px;
+
+        .navbar-brand {
+            img {
+                height: 50px;
+            }
+        }
+
+        .navbar-nav {
+            float: right;
+            text-transform: uppercase;
+        }
+
+        .navbar-collapse {
+            .navbar-nav {
+                li {
+                    margin-top: 25px;
+
+                    a {
+                        color: $white;
+                        display: inline-block;
+                    }
+
+                    #LoginBtn {
+                        color: rgb(0,0,0);
+                        font-weight: 700;
+                        background-color: $yellow;
+                        border-radius: 5px;
+                        padding: 5px 10px;
+                        right: 0;
+                        display: inline-block;
+                        margin-top: 10px;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .Band {
+        padding-left: 0;
+        padding-right: 0;
+        margin-right: -15px;
+        margin-left: -15px;
+
+        .Band-Image {
+            min-height: 400px;
+            height: 400px;
+            position: relative;
+
+            .Band-ImageText {
+                position: absolute;
+                background-color: rgba(251, 251, 251, 0.75);
+                padding: 20px;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+
+                h1 {
+                    color: rgba(0,0,0,1);
+                    font-weight: 700;
+                    margin: 0;
+                    text-transform: uppercase;
+                    font-size: 50px;
+                }
+            }
+        }
+
+        .Band-Text {
+            background-color: $darkgrey;
+            padding-top: 30px;
+            padding-bottom: 30px;
+
+            .Band-TextHeadline {
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+
+            .Band-TextRichtext {
+                margin-top: 15px;
+                margin-bottom: 0;
+            }
+
+            .Band-TextCTA {
+                color: rgb(0,0,0);
+                font-weight: 700;
+                background-color: $yellow;
+                border-radius: 5px;
+                padding: 5px 10px;
+                right: 0;
+                display: inline-block;
+                margin-top: 10px;
+            }
+            .Band-TextCTA:Hover{
+                text-decoration: none;
+            }
+
+            .LookbookExampel {
+                background-color: $lightgrey;
+                height: 300px;
+            }
+        }
+
+        .Band-UserExperience {
+            background-color: $lightgrey;
+            padding-top: 30px;
+            padding-bottom: 30px;
+
+            h3 {
+                margin-top: 0;
+            }
+
+            .Band-UserReview {
+                margin: 15px;
+
+                .UserReview {
+                    background-color: $darkgrey;
+                    padding: 15px;
+
+                    h4 {
+                        margin-top: 0;
+                    }
+
+                    .UserReviewPerson {
+                        font-style: italic;
+                        margin-bottom: 0;
+                        display: inline-block;
+                    }
+
+                    .UserReviewDate {
+                        display: inline-block;
+                        float: right;
+                    }
+                }
+            }
+        }
+    }
+
+    .Band:before,
+    .Band:after {
+        display: table;
+        content: " ";
+    }
+
+    .Band:after {
+        clear: both;
+    }
+
+    .Band:before,
+    .Band:after {
+        display: table;
+        content: " ";
+    }
+
+    .Band:after {
+        clear: both;
+    }
+
+    #content {
+        margin: 0 auto;
+    }
+
+    .push{
+        height:80px;
+    }
+
+    .footer {
+        height: 80px;
+    }
+
+    footer {
+        background-color: $darkblue;
+        color: $white;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding: 1rem;
+        text-align: center;
+
+        .footerContact {
+            display: block;
+            width: 100%;
+        }
+
+        .copyright {
+            text-align: center;
+        }
+
+        ul {
+            margin-bottom: 20px;
+
+            li {
+                display: inline-block;
+
+                a {
+                    color: $white;
+                    text-decoration: none;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                }
+
+                :hover {
+                    color: $white;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+﻿[
+  {
+    "outputFile": "Style/style.css",
+    "inputFile": "Style/style.scss"
+  },
+  {
+    "outputFile": "Style/palette.css",
+    "inputFile": "Style/palette.scss"
+  },
+  {
+    "outputFile": "Content/Style/style.css",
+    "inputFile": "Content/Style/style.scss"
+  }
+]

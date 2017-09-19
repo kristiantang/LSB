@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link href="~/Content/Bootstrap/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/Bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+    <link href="~/Content/Style/style.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="@Url.Action("Index", "Home")" class="navbar-brand">
+                    <img src="~/Content/Media/Logo/LookSerious_Books_335px_neg.png" />
+                </a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    @{ 
+                        Html.RenderAction("Menu", "Partial");
+                    }
+                    <li>
+                        @Html.ActionLink("Log ind", "Index", "User", new { area = "" }, new { @class = "", id = "LoginBtn" });
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="body-content stickyfooter">
+        @RenderBody()
+        <div class="push"></div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <ul>
+                @{
+                    Html.RenderAction("FooterMenu", "Partial");
+                }
+            </ul>
+            <div>
+                <p class="copyright">&copy; @DateTime.Now.Year - LookSerious Books - Ny Munkegade 64 1.sal - 8000 Aarhus C - Denmark</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+</body>
+</html>

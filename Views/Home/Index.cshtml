@@ -1,0 +1,53 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="Band" style="background-image: url('../../Content/Media/Image/fashion-catwalk_1920.jpg'); background-image: url('../../Content/Media/Image/fashion-catwalk_1920.jpg');">
+    <div class="Band-Image">
+        <div class="container body-content">
+            <div class="Band-ImageText">
+                <h1>Den digitale lookbook</h1>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="Band">
+    <div class="Band-Text">
+        <div class="container body-content">
+            <div class="row">
+                <div class="col-lg-8 col-xs-12">
+                    <h3 class="Band-TextHeadline">Hvorfor vælge en digital lookbook</h3>
+                    <p class="Band-TextRichtext">
+                        Den digitale lookbook er et værktøj til modellen som tager til castings på modeshows og catwalk optrædender. Her kommer muligheden for, at den gamle lookbook kan skiftes ud med en digital model. Denne er let at have med på farten og kan tilgåes med blot et enkelt link. Det er let for både modeller eller bureau at holde lookbooket opdateret uden at skulle have den fysisk i hånden. På denne måde er det nok med et login til hjemmesiden og adgang til de billeder som ønskes skiftet.
+                        <br />
+                        <br />
+                        Modellerne vil også blive stillet bedre da en lookbook ikke forsvinder under transport, bliver glemt i et fly, en lyfthavn eller ligger på hotellet. Modellen bliver også sikret mod castere som ikke ønsker at udlevere en lookbook, da denne metode gør, at casteren blot får et link og her kan bladre i modellens lookbook.
+                    </p>
+                    @Html.ActionLink("Læs mere her", "Index", "About", new { area = "" }, new { @class = "Band-TextCTA", id = "" })
+                </div>
+                <div class="col-lg-4 col-xs-1">
+                    <div class="LookbookExampel">
+                        <img src="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="Band">
+    <div class="Band-UserExperience">
+        <div class="container body-content">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h3>Brugerne tager ikke fejl</h3>
+                </div>
+                <div class="Band-UserReview">
+                    @{
+                        Html.RenderAction("UserStatements", "Partial");
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
